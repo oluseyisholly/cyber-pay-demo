@@ -1,0 +1,50 @@
+.line-height-6{
+    line-height: 2px;
+}
+
+.icon-size{
+    font-size: 3rem;
+    opacity: 100%;
+    z-index: 2;
+}
+.db-card-1{
+    background-color: #3B769E!important;  
+}
+.db-card-2{
+    background-color: #C79960!important;
+}
+.db-card-3{
+    background-color: #3D8CD6!important;
+}
+.db-icon-wrapper{
+    width: 63px;
+    height: 63px;
+    
+}
+.db-icon-wrapper-1{
+    background-color: #5e8fb1!important;
+    border-radius: 50%!important;
+}
+.db-icon-wrapper-2{
+    background-color: #d4ac83!important;
+    border-radius: 50%!important; 
+}
+.db-icon-wrapper-3{
+    background-color: #276096!important;
+    border-radius: 50%!important;
+    color: #9ec6eb!important;
+}
+.db-row-3-icon-wrapper{
+    width: 100px;
+    height: 100px;
+}
+.card-bg {
+    background-color:#eaf4fb !important;
+}
+.arrow {
+    right : 10px;
+    bottom: 30px;
+}
+.my-card {
+    margin-block: 2rem !important;
+}

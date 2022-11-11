@@ -1,0 +1,52 @@
+.w-35{
+    width:35%;
+}
+.layout-rec{
+    height: 150px;
+}
+.nav-width{
+    width: 20rem!important;
+}
+.settgsIcon{
+    font-size: 32px;
+}
+.ly-search-icon{
+    margin-top: 30px;
+    margin-left: -34px;
+}
+.my-circle {
+    width: 50px !important;
+    height: 50px !important;
+}
+.search{
+background-color: #FDFDFD !important;
+border: 1px solid #EBEBEB !important;
+border-radius: 3px !important;
+color: #2F8ED6 !important;
+padding-block: 17px!important;
+}
+.search-icon{
+margin-top: 4px!important;
+margin-left: -34px;
+}
+.search-size{
+margin-top: 10px;
+width: 50rem;
+}
+.ash-color{
+color: #969BA0!important;
+}
+.no {
+    background-color: transparent !important;
+    right: 20px;
+    top: 15px;
+}
+.input-bg {
+    background-color: #fdfdfd !important;
+}
+.input-text {
+    color: #c9ccce !important;
+}
+  
+  
+  

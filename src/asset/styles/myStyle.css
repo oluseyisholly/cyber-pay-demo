@@ -1,0 +1,123 @@
+.inputclass {
+    height: 56px;
+}
+.btn-width {
+    width: 100%;
+}
+
+/* update profile */
+.head{
+    font-weight: 600;
+}
+
+/* testing Integration */
+.test-border {
+    background-color: #ebf4fb;
+    color: #004060;
+}
+
+.btn-top {
+    margin-top: 6rem !important;
+}
+.create-text {
+    color: #4a4a4a;
+}
+/* SubAccount */
+
+.add-btn {
+    background-color: #eaf4fb;
+    color: #2F8ED6;
+    border-top-left-radius: -30px !important;
+    border-bottom-left-radius: -30px !important;
+    font-weight: 600;
+}
+.my-border {
+    background-color: #2f8ed6;
+    border: 3px solid #ffffff !important;
+    width: 65px;
+    height: 55px;
+    position: absolute;
+    left: -40px;
+    font-size: 3.5rem;
+}
+
+.w-width {
+    width: 200px;
+}
+.color-blue {
+    color: #2F8ED6 !important;
+}
+
+.my-height {
+    height: 70px;
+}
+
+.fw-acc {
+    font-weight: 700;
+}
+
+.font-generic {
+    color: #969BA0;
+}
+
+.icon-fs {
+    font-size: 3.5rem;
+}
+
+.modal-header {
+    background-color: #256ca1;
+}
+.topNav {
+    background-color: #2F8ED6;
+}
+.layout-rec{
+    height: 150px;
+}
+.card-color1 {
+    color: #616161
+}
+.card-color2 {
+    color: #929292;
+}
+.fs-7{
+    font-size: 1.2rem;
+}
+.ms-6{
+    margin-left: 8rem;
+}
+
+/* products */
+.modal-header{
+    background-color: #256CA1;
+}
+.p-fs{
+font-size: 13px;
+}
+.cus-div{
+margin-left: 3rem;
+color: white;
+}
+.ps-6{
+    padding-left: 6rem;
+}
+.pb-6{
+    padding-bottom: 8rem;
+}
+.area{
+    height: 100px !important;
+}
+hr{
+    opacity: 0.05 !important;
+}
+.light-blue {
+    background-color: #eaf4fb !important;
+}
+
+/* Onboarding */
+.ms-inline {
+    margin-right: 0.7rem !important;
+    margin-left: 0.7rem !important;
+}
+.ps-7{
+    padding-left: 4.9rem;
+}

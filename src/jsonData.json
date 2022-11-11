@@ -1,0 +1,304 @@
+{
+    "payoutData": [
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        },
+        {
+            "S/N": "",
+            "Name": "Test Schedule",
+            "Date Created": "May 7, 2020 11:37:04 AM",
+            "Buisness Code": "kin000014",
+            "Scheduled Id": "12c9d4373f345d455g666765fgfgd8d8",
+            "Status": "Processing",
+            "...": "..."
+        }
+
+    ],
+    "PayOutItem": [
+        {
+            "S/N": "",
+            "Beneficiary":"Dejo Oladeji",
+            "Amount":"N 10000",
+            "Charges":"N 100",
+            "Account Number":"0096075075",
+            "Narration":"Test Payment",
+            "Serial No":"001",
+            "Bank":"Access Bank"
+        },
+        {
+            "S/N": "",
+            "Beneficiary":"Dejo Oladeji",
+            "Amount":"N 10000",
+            "Charges":"N 100",
+            "Account Number":"0096075075",
+            "Narration":"Test Payment",
+            "Serial No":"001",
+            "Bank":"Access Bank"
+        },
+        {
+            "S/N": "",
+            "Beneficiary":"Dejo Oladeji",
+            "Amount":"N 10000",
+            "Charges":"N 100",
+            "Account Number":"0096075075",
+            "Narration":"Test Payment",
+            "Serial No":"001",
+            "Bank":"Access Bank"
+        },
+        {
+            "S/N": "",
+            "Beneficiary":"Dejo Oladeji",
+            "Amount":"N 10000",
+            "Charges":"N 100",
+            "Account Number":"0096075075",
+            "Narration":"Test Payment",
+            "Serial No":"001",
+            "Bank":"Access Bank"
+        }
+
+    ],
+    "MandateData": [
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        },
+        {
+            "S/N":"",
+            "Started Date":"26 March 2022 11:43:04 AM",
+            "End Date":"26 March 2022 11:43:04 AM",
+            "Payer's Name":"Adebayo Salami",
+            "Account Number":"0096675075",
+            "Amount":"N 16000"
+            
+        }
+    ],
+    "PaymentLinkData": [
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Active",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Active",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Active",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Cancelled",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Active",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Cancelled",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Active",
+            "Page Environment":"Live"
+        },
+        {
+            "Page Name":"Live", 
+            "Created on":"May 27,2020 11:2704 AM",
+            "Page Status":"Cancelled",
+            "Page Environment":"Live"
+        }
+
+    ],
+    "TransactionData": [
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"+2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transaction Status":"Successful"
+        },
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"+2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transavtion Status":"Failed"
+        },
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"-2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transavtion Status":"pending"
+        },
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"-2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transavtion Status":"Successful"
+        },
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"+2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transavtion Status":"Failed"
+        },
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"-2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transavtion Status":"pending"
+        },  
+        {
+            "Payer's Name":"Zenith",
+            "Merchant Reference":"f5666776a778",
+            "Amount":"+2000",
+            "Reference":"Knabsgsggssh",
+            "Customer ID":"240e5-sshgdb-3g4h",
+            "Transavtion Status":"Successful"
+        }
+    ]
+    
+}

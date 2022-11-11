@@ -1,0 +1,52 @@
+.kg2{
+    margin-left: 4rem !important;
+    margin-top: -1.2rem;
+    font-size: 13px;
+  }
+  
+  .mb{
+    margin-left: 4rem !important;
+  margin-top: -3.2rem;
+  color: #BDBDBD;
+  font-size: 12px;
+  }
+  .my-card-width{
+    width: 60% !important;
+    margin: 0!important;
+  }
+  .my-card2-width{
+    width: 60% !important;
+    margin: 0!important;
+    margin-left: -123px !important;
+  }
+  .plus{
+    background: #eaf4fb;
+  }
+  .lab{
+    margin-top: 3rem;
+  }
+  .cac{
+    border: 2px solid ;
+    border-style: dashed;
+    height: 108px;
+    /* margin-left: 11px; */
+  }
+  .my-upload{
+    font-size: 13px;
+  }
+  .my-uploads{
+    font-size: 13px;
+    margin-top: -24px;
+    margin-left: 54px;
+  }
+  .my-btn{
+    width: 100%;
+  }
+  .icon2-color{
+    color: #2C82C4;
+    width: 54px;
+    height: 54px;
+  }
+  .generic-color{
+    color: #2C82C4;
+  }

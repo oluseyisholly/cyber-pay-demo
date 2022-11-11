@@ -1,0 +1,14 @@
+.table1{
+    border: none!important;
+    font-size: 15px;
+  }
+  .table-header{
+    background-color: #EAF4FB30!important;
+  }
+  th ,td{
+    border: none!important;
+    padding-block: 15px!important;
+  }
+  td{
+    color: #3E4954;
+  }

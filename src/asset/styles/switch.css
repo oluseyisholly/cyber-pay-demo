@@ -1,0 +1,74 @@
+card{
+    margin: -0.5rem !important;
+ }
+.border-0 {
+    border: 0 !important;
+    margin: -0.5rem !important;
+}
+.my-margin-8{
+    justify-content: center;
+    display: flex;
+}
+.my-h-30{
+    height: 5rem !important;
+}
+.my-cancel{
+    background-color: white !important;
+    color: blue !important
+}
+.h6-color{
+    color: #969BA0;
+}
+.card-color1 {
+    color: #616161
+}
+.card-color2 {
+    color: #929292;
+}
+.fs-7{
+    font-size: 1.2rem;
+}
+
+.add-btn {
+    background-color: #eaf4fb;
+    color: #2F8ED6;
+    border-top-left-radius: -30px !important;
+    border-bottom-left-radius: -30px !important;
+    font-weight: 600;
+}
+.my-border {
+    background-color: #2f8ed6;
+    border: 3px solid #ffffff !important;
+    width: 65px;
+    height: 63px !important;
+    position: absolute;
+    left: -40px;
+    font-size: 3.5rem !important;
+}
+
+.w-width {
+    width: 200px;
+}
+.color-blue {
+    color: #2F8ED6;
+}
+
+.my-height {
+    height: 60px;
+}
+
+.fw-acc {
+    font-weight: 700;
+}
+
+.font-generic {
+    color: #969BA0;
+}
+
+.icon-fs {
+    font-size: 3.5rem;
+}
+
+.modal-header {
+    background-color: #256ca1;
+}
