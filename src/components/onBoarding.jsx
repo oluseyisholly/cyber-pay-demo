@@ -1,8 +1,7 @@
 import React from 'react';
 import "../asset/styles/myStyle.css"
-import { Container } from 'react-bootstrap';
 
-const OnBoarding = ()=>{
+const OnBoarding = () => {
     return(
         <div className="mt-5 d-flex align-items-center layout-rec ps-7 topNav ms-inline">
             <div className=" text-white">

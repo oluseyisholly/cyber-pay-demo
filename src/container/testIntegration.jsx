@@ -49,65 +49,68 @@ export const TestIntegration = () => {
                             <p className="d-inline ms-3 fs-5">Create a sample account to test and understand your dedicated account</p>
                         </div>
                         <Form>
-                            <Row className="mb-5 gx-5">
-                                <CustomForm
-                                    as={Col}
-                                    placeholder={"DEMO"}
-                                    label={"Integration Status"}
-                                    value={integrate.integrationStatus}
-                                    type={"text"}
-                                    classStyle={"inputclass"}
-                                        onchange = {(integrationStatus) => { setIntegrate({
-                                            ...integrate, 
-                                            integrationStatus
-                                        })
-                                    }}
-                                />
-                                <CustomForm
-                                    as={Col}
-                                    placeholder={"KINGSCRAFT"}
-                                    label={"Business Name"}
-                                    type={"text"}
-                                    value={integrate.businessName}
-                                    classStyle={"inputclass"}
-                                        onchange = {(businessName) => { setIntegrate({
-                                            ...integrate, 
-                                            businessName
-                                        })
-                                    }}
-                                />
+                            <Row className="gx-5 gy-3">
+                                <Col lg={6} md={6} sm={12}>
+                                    <CustomForm
+                                        placeholder={"DEMO"}
+                                        label={"Integration Status"}
+                                        value={integrate.integrationStatus}
+                                        type={"text"}
+                                        classStyle={"inputclass"}
+                                            onchange = {(integrationStatus) => { setIntegrate({
+                                                ...integrate, 
+                                                integrationStatus
+                                            })
+                                        }}
+                                    />
+                                </Col>
+                                <Col lg={6} md={6} sm={12}>
+                                    <CustomForm
+                                        placeholder={"KINGSCRAFT"}
+                                        label={"Business Name"}
+                                        type={"text"}
+                                        value={integrate.businessName}
+                                        classStyle={"inputclass"}
+                                            onchange = {(businessName) => { setIntegrate({
+                                                ...integrate, 
+                                                businessName
+                                            })
+                                        }}
+                                    />
+                                </Col>
+                                <Col lg={6} md={6} sm={12}>
+                                    <CustomForm
+                                        placeholder={"KIN000014"}
+                                        label={"Business Code"}
+                                        type={"text"}
+                                        value={integrate.businessCode}
+                                        classStyle={"inputclass"}
+                                            onchange = {(businessCode) => { setIntegrate({
+                                                ...integrate, 
+                                                businessCode
+                                            })
+                                        }}
+                                    />
+                                </Col>
+                                <Col lg={6} md={6} sm={12}>
+                                    <CustomForm
+                                        placeholder={"AC2342342JD344N"}
+                                        label={"Integration Key"}
+                                        type={"text"}
+                                        value={integrate.integrationKey}
+                                        classStyle={"inputclass"}
+                                            onchange = {(integrationKey) => { setIntegrate({
+                                                ...integrate, 
+                                                integrationKey
+                                            })
+                                        }}
+                                    />
+                                </Col>
                             </Row>
-                            <Row className="mb-5 gx-5">
-                                <CustomForm
-                                    as={Col}
-                                    placeholder={"KIN000014"}
-                                    label={"Business Code"}
-                                    type={"text"}
-                                    value={integrate.businessCode}
-                                    classStyle={"inputclass"}
-                                        onchange = {(businessCode) => { setIntegrate({
-                                            ...integrate, 
-                                            businessCode
-                                        })
-                                    }}
-                                />
-                                <CustomForm
-                                    as={Col}
-                                    placeholder={"AC2342342JD344N"}
-                                    label={"Integration Key"}
-                                    type={"text"}
-                                    value={integrate.integrationKey}
-                                    classStyle={"inputclass"}
-                                        onchange = {(integrationKey) => { setIntegrate({
-                                            ...integrate, 
-                                            integrationKey
-                                        })
-                                    }}
-                                />
-                            </Row>
+
                         </Form>
-                        <Row className="gx-5 btn-top">
-                            <Col xs={6}>
+                        <Row className="gx-5 gy-3 mt-5">
+                            <Col lg={6} md={6} sm={12}>
                                 <Button 
                                     variant="outline-primary" 
                                     className="w-100 inputclass"
@@ -118,7 +121,7 @@ export const TestIntegration = () => {
                                     BACK
                                 </Button>
                             </Col>
-                            <Col xs={6}>
+                            <Col lg={6} md={6} sm={12}>
                                 <Button 
                                     className="w-100 inputclass"
                                     onClick={handleSubmit} 

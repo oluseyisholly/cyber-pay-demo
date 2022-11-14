@@ -1,14 +1,28 @@
-.table1{
+@media (min-width: 992px) {
+  .table1{
     border: none!important;
-    font-size: 15px;
+    font-size: 1rem;
   }
-  .table-header{
-    background-color: #EAF4FB30!important;
-  }
-  th ,td{
+}
+@media (min-width: 769px) and (max-width: 991px){
+  .table1{
     border: none!important;
-    padding-block: 15px!important;
+    font-size: 0.9rem;
   }
-  td{
-    color: #3E4954;
+}
+@media (max-width: 768px){
+  .table1 {
+    border: none !important;
+    font-size: 0.75rem !important;
   }
+}
+.table-header{
+  background-color: #EAF4FB30!important;
+}
+th ,td{
+  border: none!important;
+  padding-block: 15px!important;
+}
+td{
+  color: #3E4954;
+}

@@ -37,11 +37,11 @@ const Dashboard = () => {
         {channels: "28", cash: 95},
     ];
     return(
-        <Container className={"my-2 py-3"} as={"section"} fluid>
+        <Container className={"my-2 py-3 overflow-hidden"} as={"section"} fluid>
             <Row className="flex-row justify-content-center">
                 <Col lg={11}>
                     <Row>
-                        <Col lg={8}>
+                        <Col lg={8} md={8}>
                             <div>
                                 <h1 className=" fw-bolder">
                                     <MdDashboard className="mb-2 color-blue "/>
@@ -50,10 +50,12 @@ const Dashboard = () => {
                                 <h6 className="ash-color fs-4 fw-normal"> Welcome to CyberPay Merchant Dashboard!</h6>
                             </div>
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} md={4}>
                             <div className={"w-100"}>
-                                <CustomCard className={"shadow-none card-bg bg-color-lt-blue position-relative"} classNameBody={"w-100 d-flex flex-row align-items-center"}>
-                                    
+                                <CustomCard 
+                                    className={"shadow-none card-bg bg-color-lt-blue position-relative"} 
+                                    classNameBody={"w-100 d-flex flex-row align-items-center"}
+                                >
                                     <TiShoppingBag style={{color: "#2F8ED6"}} className="me-2 icon-size d-inline"/>
                                     <span className={"d-inline line-height-6"}>
                                         <h4 className="fs-5 fw-bolder d-inline">Filter Period</h4>
@@ -64,8 +66,8 @@ const Dashboard = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="my-4">
-                        <Col className="me-2">
+                    <Row className="my-4 gx-5 gy-3">
+                        <Col lg={4} md={6} sm={12}>
                             <CustomCard className={" shadow-none db-card-1"} classNameBody={"w-100 py-4 d-flex flex-row align-items-center"}>
                                <Stack direction="horizontal" className="my-card">
                                     <div className={"me-3 db-icon-wrapper ms-4 db-icon-wrapper-1 d-flex align-items-center justify-content-center"}>
@@ -78,8 +80,8 @@ const Dashboard = () => {
                                </Stack>
                             </CustomCard>
                         </Col>
-                        <Col className="mx-2">
-                            <CustomCard className={" shadow-none db-card-2"} classNameBody={"w-100 py-4 d-flex flex-row align-items-center"}>
+                        <Col lg={4} md={6} sm={12}>
+                            <CustomCard className={"shadow-none db-card-2"} classNameBody={"w-100 py-4 d-flex flex-row align-items-center"}>
                                <Stack direction="horizontal" className="my-card">
                                     <div className={"me-3 db-icon-wrapper ms-4 db-icon-wrapper-2 d-flex align-items-center justify-content-center"}>
                                         <BsFillBookmarksFill className="text-white icon-size"/>  
@@ -91,11 +93,11 @@ const Dashboard = () => {
                                </Stack>
                             </CustomCard>
                         </Col>
-                        <Col className="ms-2">
+                        <Col lg={4} md={12} sm={12}>
                             <CustomCard className={"shadow-none db-card-3"} classNameBody={"w-100 py-4 d-flex flex-row align-items-center"}>
                                 <Stack direction="horizontal" className="my-card">
-                                    <div className={" me-3 db-icon-wrapper db-icon-wrapper-3 d-flex align-items-center justify-content-center"}>
-                                        <BsWallet className="fs-1   icon-size"/>  
+                                    <div className={" me-3 db-icon-wrapper ms-4 db-icon-wrapper-3 d-flex align-items-center justify-content-center"}>
+                                        <BsWallet className="fs-1 icon-size"/>  
                                     </div>
                                     <span className="text-white">
                                         <h4 className="fs-1 fw-bolder my-auto"><Naira>{12500.00}</Naira></h4>
@@ -105,8 +107,8 @@ const Dashboard = () => {
                             </CustomCard>
                         </Col>
                     </Row>
-                    <Row className={"mb-5"}>
-                        <Col xs={8}>
+                    <Row className={"mb-5 gx-5"}>
+                        <Col lg={8} md={7} sm={12}>
                             <CustomCard className={"h-100 pt-4"}>
                                 <ResponsiveContainer className={"mx-auto"} width={"90%"} height={"90%"}>
                                     <AreaChart className=""
@@ -129,24 +131,24 @@ const Dashboard = () => {
                                 <h3 className="ash-color fs-5 fw-light text-center">Channels</h3>
                             </CustomCard>
                         </Col>
-                        <Col xs={4}>
+                        <Col lg={4} md={5} sm={12}>
                             <CustomCard className={"py-5"}>
-                                <div className="">
+                                <div className="mb-2">
                                     <div  className="mx-auto bg-light db-row-3-icon-wrapper rounded-circle d-flex flex-column align-items-center justify-content-center">
                                         <IoIosPerson className="icon-size"/>
                                     </div>
-                                    <div className="mt-4" style={{lineHeight: "3px"}} >
-                                        <p className="text-center fw-bold">Owoyemi Olusola</p>
-                                        <p className="text-center mt-4 ">owoyemisholly@gmail.com</p>
+                                    <div className="mt-4 profile-col2" style={{lineHeight: "3px"}} >
+                                        <p className="text-center fs-4 fw-bold">Owoyemi Olusola</p>
+                                        <p className="text-center fs-5 mt-4 fw-light">owoyemisholly@gmail.com</p>
                                     </div>
                                 </div>
                                 <hr className="mx-auto my-4 w-75"/>
-                                <div style={{lineHeight: "15px"}} className="mt-3">
-                                    <p className="text-center fw-bold">Total Balance</p>
-                                    <p className=" text-center fs-3" style={{fontWeight: "800"}}><Naira>{21500.00}</Naira></p>
+                                <div style={{lineHeight: "15px"}} className="mt-3 pt-2 profile-col">
+                                    <h5 className="text-center">Total Balance</h5>
+                                    <h1 className=" text-center" style={{fontWeight: "800"}}><Naira>{21500.00}</Naira></h1>
                                 </div>
                                 <div className="mb-4 mt-5">
-                                    <Button className="mx-auto btn-rd-br w-65 text-nowrap d-block db-card-1">
+                                    <Button className="mx-auto btn-rd-br w-65 text-nowrap d-block db-card-1 py-3 px-5 fs-5 fw-bold">
                                         View Statement
                                     </Button>
                                 </div>

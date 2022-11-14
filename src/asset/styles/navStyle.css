@@ -47,6 +47,44 @@ color: #969BA0!important;
 .input-text {
     color: #c9ccce !important;
 }
-  
+ @media(max-width: 768px) {
+    .align-nav {
+        flex-direction: row !important;
+    }
+    .search-width {
+        width: 100%;
+    }
+    .search-font {
+        font-size: 1rem !important;
+    }
+    .route-font {
+        font-size: 1.3rem !important;
+    }
+ }
+ @media (min-width: 769px) and (max-width: 991px) {
+    .search-width {
+        width: 100%;
+    }
+    .search-font {
+        font-size: 1.5rem !important;
+    }
+    .route-font {
+        font-size: 1.75rem !important;
+    }
+ }
+ @media(min-width: 992px){
+    .align-nav {
+        flex-direction: column !important;
+    }
+    .search-width {
+        width: 50%;
+    }
+    .search-font {
+        font-size: 1.5rem !important;
+    }
+    .route-font {
+        font-size: 1.75rem !important;
+    }
+ }
   
   

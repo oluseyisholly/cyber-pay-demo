@@ -49,36 +49,39 @@ export const CreateAccount = () => {
                     <Col lg={11}>
                         <Form>
                             <Row className="mb-3">
-                                <CustomForm
-                                    as={Col}
-                                    label={"Bank"}
-                                    id={"formGridBank"}
-                                    value={["GTBank", "Access", "UBA", "Zenith", "Union", "FirstBank", "Wema"]}
-                                    defaultvalue={"Choose Bank"}
-                                    classStyle={"inputclass create-text"}
-                                    onchange = {(bank) => { setAccount({
-                                        ...account, 
-                                        bank
-                                    })
-                                }}
-                                />
-                                <CustomForm
-                                    as={Col}
-                                    label={"Account Number"}
-                                    placeholder={"ENTER ACCOUNT NUMBER"}
-                                    type={"text"}
-                                    value={account.accountName}
-                                    id={"formGridAccount"}
-                                    classStyle={"inputclass"}
-                                    onchange = {(accountName) => { setAccount({
-                                        ...account, 
-                                        accountName
-                                    })
-                                }}
-                                />
+                                <Col lg={6} md={6} sm={12}>
+                                    <CustomForm
+                                        as={Col}
+                                        label={"Bank"}
+                                        id={"formGridBank"}
+                                        value={["GTBank", "Access", "UBA", "Zenith", "Union", "FirstBank", "Wema"]}
+                                        defaultvalue={"Choose Bank"}
+                                        classStyle={"inputclass create-text"}
+                                            onchange = {(bank) => { setAccount({
+                                                ...account, 
+                                                bank
+                                            })
+                                        }}
+                                    />
+                                </Col>
+                                <Col lg={6} md={6} sm={12}>
+                                    <CustomForm
+                                        label={"Account Number"}
+                                        placeholder={"ENTER ACCOUNT NUMBER"}
+                                        type={"text"}
+                                        value={account.accountName}
+                                        id={"formGridAccount"}
+                                        classStyle={"inputclass"}
+                                            onchange = {(accountName) => { setAccount({
+                                                ...account, 
+                                                accountName
+                                            })
+                                        }}
+                                    />
+                                </Col>
                             </Row>
                             <Row className="mt-4">
-                                <Col xs={6}>
+                                <Col lg={6} md={6} sm={12}>
                                     <CustomForm 
                                         label={"Account Name"}
                                         placeholder={"ENTER ACCOUNT NAME"}
@@ -96,7 +99,7 @@ export const CreateAccount = () => {
                             </Row>
                         </Form>
                         <Row className="mt-5">
-                            <Col xs={6}>
+                            <Col lg={6} md={6} sm={12}>
                                 <Button 
                                     onClick={handleSubmit} 
                                     className="inputclass btn-width"
