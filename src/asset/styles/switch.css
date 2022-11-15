@@ -42,7 +42,7 @@ card{
     width: 65px;
     height: 63px !important;
     position: absolute;
-    left: -40px;
+    right: 180px;
     font-size: 3.5rem !important;
 }
 

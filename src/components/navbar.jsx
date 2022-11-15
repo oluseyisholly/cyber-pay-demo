@@ -17,7 +17,7 @@ const CustomNav = () => {
     return(
         <React.Fragment>
             <Row className="flex-row justify-content-center">
-                <Col lg={11}>
+                <Col xs={11}>
                     <Navbar expand="lg" className="mt-4 justify-content-between">
                         <Nav className="fs-5 color-blue search-width" href="#home">
                             {window.location.pathname === routes.dashboard && (
@@ -46,7 +46,7 @@ const CustomNav = () => {
                         <Nav className="justify-content-end d-flex w-50" id="basic-navbar-nav">
                             <div className="nav-width flex-row align-items-center justify-content-end d-none d-lg-block">
                                 <BsFillBellFill className="color-blue me-4 fs-2 my-auto"/>
-                                <IoMdSettings className="color-blue settgsIcon" />
+                                {window.location.pathname === routes.dashboard && <IoMdSettings className="color-blue settgsIcon"/>}
                                 <img width={"50px"} height="50" className={" ms-4 rounded-circle my-circle"} src={IMAGES.avatar} alt={'avatar'}/>
                                 <p className={"fs-6 fw-bold my-auto text-nowrap ps-3 d-inline"}>Hello, Olusola</p>
                             </div>

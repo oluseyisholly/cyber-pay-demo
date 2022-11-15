@@ -39,39 +39,39 @@ export const Products = () => {
     return(
         <React.Fragment>
             <Container as={"section"} fluid>
-               <Row className="flex-row justify-content-center">
-                    <Col xs={10}>
-                        <Row>
-                            <Col className="d-flex flex-row justify-content-between pt-3">
-                                <div>
-                                    <MdProductionQuantityLimits className="icon-fs color-blue pb-2"/>
-                                    <h1 className="fw-acc d-inline pt-3">Products</h1>
-                                    <span>
-                                        <h5 className="font-generic fs-4">Listings of products created</h5>
-                                    </span>
-                                </div>
-                                <div className="position-relative">
-                                    <Button 
-                                        className="rounded-circle my-border text-center text-white d-flex justify-content-center align-items-center" 
-                                        onClick={() => setShow(true)}>
-                                        <BiPlus />
-                                    </Button>
-                                    <CustomModal
-                                        setShowModal={setShow} 
-                                        show={show}    
-                                        title={
-                                            <div className="text-white ps-6 py-3">
-                                                <h2>Add Products</h2>
-                                                <p>Add new product to existing products</p>
-                                            </div>
-                                        }  
-                                        body={
-                                            <div className="">
-                                                <Row className="pb-6 flex-row justify-content-center">
-                                                    <Col lg={10}>
-                                                        <h4 className="py-4 color-blue fw-bold">PRODUCTS INFORMATION</h4>
-                                                        <Form>
-                                                            <Row className="mb-3 gx-5">
+               <Row className="flex-row justify-content-center mt-lg-5 mt-3">
+                    <Col lg={11} md={11} sm={10}>
+                        <Row className="flex-row justify-content-between pt-3 gy-3">
+                            <Col lg={6} md={6} sm={12}>
+                                <MdProductionQuantityLimits className="icon-fs color-blue pb-2"/>
+                                <h1 className="fw-acc d-inline pt-3">Products</h1>
+                                <span>
+                                    <h5 className="font-generic fs-4">Listings of products created</h5>
+                                </span>
+                            </Col>
+                            <Col lg={6} md={6} sm={12} className="position-relative d-flex flex-row justify-content-end">
+                                <Button 
+                                    className="rounded-circle my-border text-center text-white d-flex justify-content-center align-items-center" 
+                                    onClick={() => setShow(true)}>
+                                    <BiPlus />
+                                </Button>
+                                <CustomModal
+                                    setShowModal={setShow} 
+                                    show={show}    
+                                    title={
+                                        <div className="text-white trans-head ps-6 py-3">
+                                            <h2>Add Products</h2>
+                                            <p>Add new product to existing products</p>
+                                        </div>
+                                    }  
+                                    body={
+                                        <div className="">
+                                            <Row className="pb-6 flex-row justify-content-center">
+                                                <Col lg={10}>
+                                                    <h4 className="py-4 color-blue trans-font fw-bold">PRODUCTS INFORMATION</h4>
+                                                    <Form>
+                                                        <Row className="gy-3 gx-5">
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
                                                                     as={Col}
                                                                     label={"Product Name"}
@@ -86,6 +86,8 @@ export const Products = () => {
                                                                     })
                                                                 }}
                                                                 />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
                                                                     as={Col}
                                                                     label={"Product Code"}
@@ -100,55 +102,53 @@ export const Products = () => {
                                                                     })
                                                                 }}
                                                                 />
-                                                            </Row>
-                                                            <Row className="mb-3 gx-5">
-                                                                <Col xs={6}>
-                                                                    <CustomForm 
-                                                                        label={"Description"}
-                                                                        placeholder={"Enter Product Description"}
-                                                                        type={"text"}
-                                                                        area={"textarea"}
-                                                                        value= {products.description}
-                                                                        id={"formGridDescription"}
-                                                                        classStyle={"area"}
-                                                                        onchange = {(description) => { setProducts({
-                                                                            ...products, 
-                                                                            description
-                                                                        })
-                                                                    }}
-                                                                    />
-                                                                </Col>
-                                                            </Row>
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm 
+                                                                    label={"Description"}
+                                                                    placeholder={"Enter Product Description"}
+                                                                    type={"text"}
+                                                                    area={"textarea"}
+                                                                    value= {products.description}
+                                                                    id={"formGridDescription"}
+                                                                    classStyle={"area"}
+                                                                    onchange = {(description) => { setProducts({
+                                                                        ...products, 
+                                                                        description
+                                                                    })
+                                                                }}
+                                                                />
+                                                            </Col>
+                                                        </Row>
                                                     </Form>
-                                                <Row className="gx-5 mt-5">
-                                                    <Col xs={6}>
-                                                        <Button 
-                                                            className="w-100 inputclass"
-                                                            onClick={handleSubmit} 
-                                                        >
-                                                            Submit
-                                                        </Button>
-                                                    </Col>
-                                                    <Col xs={6}>
-                                                        <Button 
-                                                            variant="outline-primary" 
-                                                            className="w-100 inputclass"
-                                                        >
-                                                            BACK
-                                                        </Button>
-                                                    </Col>
-                                                </Row>
-                                                    </Col>
-                                                </Row>
-                                            </div>
-                                        }                          
-                                    />
-                                    <div className="border add-btn text-center w-width rounded my-height pt-3 fs-4">Add Product</div>
-                                </div>
+                                                    <Row className="gx-5 mt-5">
+                                                        <Col xs={6}>
+                                                            <Button 
+                                                                className="w-100 inputclass"
+                                                                onClick={handleSubmit} 
+                                                            >
+                                                                Submit
+                                                            </Button>
+                                                        </Col>
+                                                        <Col xs={6}>
+                                                            <Button 
+                                                                variant="outline-primary" 
+                                                                className="w-100 inputclass"
+                                                            >
+                                                                BACK
+                                                            </Button>
+                                                        </Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    }                          
+                                />
+                                <div className="border add-btn text-center w-width rounded my-height pt-3 fs-4">Add Product</div>
                             </Col>
                         </Row>
                         <Row className="my-5">
-                            <Col xs={6}>
+                            <Col lg={6} md={12} sm={12}>
                                 <InputGroup size="lg" className="position-relative">
                                     <Form.Control
                                         placeholder="Search Products"
@@ -162,8 +162,8 @@ export const Products = () => {
                                 </InputGroup>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col xs={4}>
+                        <Row className="gy-5 gx-5">
+                            <Col lg={4} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-center">
                                         <Col lg={11}>
@@ -186,12 +186,10 @@ export const Products = () => {
                                             </Row>
                                             <hr/>
                                             <Row>
-                                                <Col>
-                                                </Col>
-                                                <Col className="">
-                                                    <Button className="busi ms-3 w-100">
+                                                <Col className="d-flex flex-row justify-content-end">
+                                                    <Button className="busi ms-3 w-50">
                                                         <BiTransfer className="me-3"/>
-                                                        <p className="d-inline">Edit Product</p>
+                                                        Edit Product
                                                     </Button>
                                                 </Col>
                                             </Row>
@@ -199,43 +197,7 @@ export const Products = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
-                            <CustomCard>
-                                    <Row className="flex-row justify-content-center">
-                                        <Col lg={11}>
-                                            <Row className="flex-row justify-content-between">
-                                                <Col className="mt-5">
-                                                    <h5 className="card-color1 fs-5 fw-bold">Awoof</h5>
-                                                    <p className="card-color2 fs-5">Product Name</p>
-                                                </Col>
-                                                <Col className="mt-5">
-                                                    <h5 className="card-color1 fs-7 fw-bold text-end">278t2uj</h5>
-                                                    <p className="card-color2 fs-5 text-end">Product Code</p>
-                                                </Col>
-                                            </Row>
-                                            <hr/>
-                                            <Row>
-                                                <Col>
-                                                    <h5 className="card-color2 fw-bold fs-5">Product Description</h5>
-                                                    <p className="card-color1 fs-5">Wallet Code is a kind of card used for doing a lot of things</p>
-                                                </Col>
-                                            </Row>
-                                            <hr/>
-                                            <Row>
-                                                <Col>
-                                                </Col>
-                                                <Col className="">
-                                                    <Button className="busi ms-3 w-100">
-                                                        <BiTransfer className="me-3"/>
-                                                        <p className="d-inline">Edit Product</p>
-                                                    </Button>
-                                                </Col>
-                                            </Row>
-                                        </Col>
-                                    </Row>
-                                </CustomCard>
-                            </Col>
-                            <Col xs={4}>
+                            <Col lg={4} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-center">
                                         <Col lg={11}>
@@ -258,13 +220,10 @@ export const Products = () => {
                                             </Row>
                                             <hr/>
                                             <Row>
-                                                
-                                                <Col>
-                                                </Col>
-                                                <Col className="">
-                                                    <Button className="busi ms-3 w-100">
+                                                <Col className="d-flex flex-row justify-content-end">
+                                                    <Button className="busi ms-3 w-50">
                                                         <BiTransfer className="me-3"/>
-                                                        <p className="d-inline">Edit Product</p>
+                                                        Edit Product
                                                     </Button>
                                                 </Col>
                                             </Row>
@@ -272,7 +231,7 @@ export const Products = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={4} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-center">
                                         <Col lg={11}>
@@ -295,12 +254,10 @@ export const Products = () => {
                                             </Row>
                                             <hr/>
                                             <Row>
-                                                <Col>
-                                                </Col>
-                                                <Col className="">
-                                                    <Button className="busi ms-3 w-100">
+                                                <Col className="d-flex flex-row justify-content-end">
+                                                    <Button className="busi ms-3 w-50">
                                                         <BiTransfer className="me-3"/>
-                                                        <p className="d-inline">Edit Product</p>
+                                                        Edit Product
                                                     </Button>
                                                 </Col>
                                             </Row>
@@ -308,7 +265,7 @@ export const Products = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={4} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-center">
                                         <Col lg={11}>
@@ -331,12 +288,10 @@ export const Products = () => {
                                             </Row>
                                             <hr/>
                                             <Row>
-                                                <Col>
-                                                </Col>
-                                                <Col className="">
-                                                    <Button className="busi ms-3 w-100">
+                                                <Col className="d-flex flex-row justify-content-end">
+                                                    <Button className="busi ms-3 w-50">
                                                         <BiTransfer className="me-3"/>
-                                                        <p className="d-inline">Edit Product</p>
+                                                        Edit Product
                                                     </Button>
                                                 </Col>
                                             </Row>
@@ -344,7 +299,7 @@ export const Products = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={4} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-center">
                                         <Col lg={11}>
@@ -367,12 +322,10 @@ export const Products = () => {
                                             </Row>
                                             <hr/>
                                             <Row>
-                                                <Col>
-                                                </Col>
-                                                <Col className="">
-                                                    <Button className="busi ms-3 w-100">
+                                                <Col className="d-flex flex-row justify-content-end">
+                                                    <Button className="busi ms-3 w-50">
                                                         <BiTransfer className="me-3"/>
-                                                        <p className="d-inline">Edit Product</p>
+                                                        Edit Product
                                                     </Button>
                                                 </Col>
                                             </Row>
@@ -380,7 +333,40 @@ export const Products = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-
+                            <Col lg={4} md={6} sm={12}>
+                                <CustomCard>
+                                    <Row className="flex-row justify-content-center">
+                                        <Col lg={11}>
+                                            <Row className="flex-row justify-content-between">
+                                                <Col className="mt-5">
+                                                    <h5 className="card-color1 fs-5 fw-bold">Awoof</h5>
+                                                    <p className="card-color2 fs-5">Product Name</p>
+                                                </Col>
+                                                <Col className="mt-5">
+                                                    <h5 className="card-color1 fs-7 fw-bold text-end">278t2uj</h5>
+                                                    <p className="card-color2 fs-5 text-end">Product Code</p>
+                                                </Col>
+                                            </Row>
+                                            <hr/>
+                                            <Row>
+                                                <Col>
+                                                    <h5 className="card-color2 fw-bold fs-5">Product Description</h5>
+                                                    <p className="card-color1 fs-5">Wallet Code is a kind of card used for doing a lot of things</p>
+                                                </Col>
+                                            </Row>
+                                            <hr/>
+                                            <Row>
+                                                <Col className="d-flex flex-row justify-content-end">
+                                                    <Button className="busi ms-3 w-50">
+                                                        <BiTransfer className="me-3"/>
+                                                        Edit Product
+                                                    </Button>
+                                                </Col>
+                                            </Row>
+                                        </Col>
+                                    </Row>
+                                </CustomCard>
+                            </Col>
                         </Row>
                     </Col>
                </Row>

@@ -40,40 +40,40 @@ const Transaction = () =>{
     return(
         <React.Fragment>
             <Container as={"section"} fluid>
-                <Row className="flex-row justify-content-center mt-5">
-                    <Col lg={11}>
-                        <Row>
-                            <Col className="d-flex flex-row justify-content-between pt-3">
-                                <div>
-                                    <BsFillFileTextFill className="icon-fs color-blue pb-2"/>
-                                    <h1 className="fw-acc d-inline pt-3">Transaction</h1>
-                                    <span>
-                                        <h5 className="font-generic fs-4">Here are the list of transaction on this account</h5>
-                                    </span>
-                                </div>
-                                <div className="position-relative">
-                                    <Button 
-                                        className="rounded-circle my-border text-center text-white d-flex justify-content-center align-items-center" 
-                                        onClick={() => setShow(true)}
-                                    >
-                                        <BiPlus />
-                                    </Button>
-                                    <CustomModal
-                                        setShowModal={setShow} 
-                                        show={show}    
-                                        title={
-                                            <div className="text-white ps-6 py-3">
-                                                <h2>Add Transaction</h2>
-                                                <p>Add transaction to existing transactions</p>
-                                            </div>
-                                        }  
-                                        body={
-                                            <div className="">
-                                                <Row className="pb-6 flex-row justify-content-center">
-                                                    <Col lg={10}>
-                                                        <h4 className="py-4 color-blue fw-bold">TRANSACTION INFORMATION</h4>
-                                                        <Form>
-                                                            <Row className="mb-3 gx-5">
+                <Row className="flex-row justify-content-center mt-lg-5 mt-3">
+                    <Col lg={11} md={11} sm={10}>
+                        <Row className="flex-row justify-content-between pt-3 gy-3">
+                            <Col lg={6} md={6} sm={12}>
+                                <BsFillFileTextFill className="icon-fs color-blue pb-2" />
+                                <h1 className="fw-acc d-inline pt-3">Transaction</h1>
+                                <span>
+                                    <h5 className="font-generic fs-4">Here are the list of transaction on this account</h5>
+                                </span>
+                            </Col>
+                            <Col lg={6} md={6} sm={12} className="position-relative d-flex flex-row justify-content-end">
+                                <Button 
+                                    className="rounded-circle my-border text-center text-white d-flex justify-content-center align-items-center" 
+                                    onClick={() => setShow(true)}
+                                >
+                                    <BiPlus />
+                                </Button>
+                                <CustomModal
+                                    setShowModal={setShow} 
+                                    show={show}    
+                                    title={
+                                        <div className="text-white trans-head ps-6 py-3">
+                                            <h2>Add Transaction</h2>
+                                            <p>Add transaction to existing transactions</p>
+                                        </div>
+                                    }  
+                                    body={
+                                      
+                                            <Row className="pb-6 flex-row justify-content-center">
+                                                <Col lg={11}>
+                                                    <h4 className="py-4 color-blue trans-font fw-bold">TRANSACTION INFORMATION</h4>
+                                                    <Form>
+                                                        <Row className="gy-3 gx-5">
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
                                                                     as={Col}
                                                                     label={"Payer's Name"}
@@ -87,7 +87,9 @@ const Transaction = () =>{
                                                                         payersName
                                                                     })
                                                                 }}
-                                                                />
+                                                                />  
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
                                                                     as={Col}
                                                                     label={"Merchant Reference"}
@@ -101,9 +103,9 @@ const Transaction = () =>{
                                                                         merchantReference
                                                                     })
                                                                 }}
-                                                                />
-                                                            </Row>
-                                                            <Row className="mb-3 gx-5">
+                                                                />  
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
                                                                     as={Col}
                                                                     label={"Amount"}
@@ -117,9 +119,10 @@ const Transaction = () =>{
                                                                         amount
                                                                     })
                                                                 }}
-                                                                />
+                                                                />  
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}> 
                                                                 <CustomForm
-                                                                    as={Col}
                                                                     label={"Reference"}
                                                                     placeholder={"Enter Reference"}
                                                                     type={"text"}
@@ -131,34 +134,34 @@ const Transaction = () =>{
                                                                         reference
                                                                     })
                                                                 }}
-                                                            />
+                                                                /> 
+                                                            </Col>
                                                         </Row>
                                                     </Form>
-                                                <Row className="gx-5 pt-4">
-                                                    <Col xs={6}>
-                                                        <Button 
-                                                            variant="outline-primary" 
-                                                            className="w-100 inputclass"
-                                                        >
-                                                            BACK
-                                                        </Button>
-                                                    </Col>
-                                                    <Col xs={6}>
-                                                        <Button 
-                                                            className="w-100 inputclass"
-                                                            onClick={handleSubmit} 
-                                                        >
-                                                            Submit
-                                                        </Button>
-                                                    </Col>
-                                                </Row>
-                                                    </Col>
-                                                </Row>
-                                            </div>
-                                        }                          
-                                    />
-                                    <div className="border add-btn text-center w-width rounded my-height pt-3 fs-4">Add Transaction</div>
-                                </div>
+                                                    <Row className="gx-5 gy-3 mt-3">
+                                                        <Col lg={6}>
+                                                            <Button 
+                                                                variant="outline-primary" 
+                                                                className="w-100 inputclass"
+                                                            >
+                                                                BACK
+                                                            </Button>
+                                                        </Col>
+                                                        <Col lg={6}>
+                                                            <Button 
+                                                                className="w-100 inputclass"
+                                                                onClick={handleSubmit} 
+                                                            >
+                                                                Submit
+                                                            </Button>
+                                                        </Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                       
+                                    }                          
+                                />
+                                <div className="border add-btn text-center w-width rounded my-height pt-3 fs-4">Add Transaction</div>
                             </Col>
                         </Row>
                         <Row className="mt-5">

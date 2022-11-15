@@ -37,7 +37,7 @@
     width: 65px;
     height: 55px;
     position: absolute;
-    left: -40px;
+    right: 180px;
     font-size: 3.5rem;
 }
 
@@ -97,9 +97,6 @@ font-size: 13px;
 margin-left: 3rem;
 color: white;
 }
-.ps-6{
-    padding-left: 6rem;
-}
 .pb-6{
     padding-bottom: 8rem;
 }
@@ -120,4 +117,35 @@ hr{
 }
 .ps-7{
     padding-left: 4.9rem;
+} 
+@media (max-width: 768px) {
+    .trans-font {
+        text-align: center !important;
+    }
+    .trans-head {
+        font-size: medium !important;
+    }
+    .ps-6 {
+        text-align: center;
+        padding-left: 5rem;
+    }
+    .fs-custom {
+        font-size: 0.9rem !important;
+    }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+    .ps-6 {
+        padding-left: 3rem !important;
+    }
+    .fs-custom {
+        font-size: 1.25rem !important;
+    }
+}
+@media (min-width: 992px) {
+    .ps-6{
+        padding-left: 6rem;
+    }
+    .fs-custom {
+        font-size: 1.25rem !important;
+    }
 }

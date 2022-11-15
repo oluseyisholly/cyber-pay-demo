@@ -1,5 +1,4 @@
-import Stack from 'react-bootstrap/Stack';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "../asset/styles/sideNavStyle.css"
 import { routes } from '../routes';
 import { IoIosSwitch, IoMdSettings } from 'react-icons/io';
@@ -17,7 +16,7 @@ const SideNav = () => {
     return (
         <Navbar expand={"lg"} className='align-nav'>
             <Navbar.Brand>
-                <img src={IMAGES.logo} alt='' width='150' height='45' className={" mt-4 mb-5"}></img>
+                <img src={IMAGES.logo} alt='' width='150' height='45' className={" mt-lg-4 mb-lg-5"}></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='sidebar-nav'/>
             <Navbar.Offcanvas id='sidebar-nav'>

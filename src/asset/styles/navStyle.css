@@ -50,6 +50,7 @@ color: #969BA0!important;
  @media(max-width: 768px) {
     .align-nav {
         flex-direction: row !important;
+        margin-inline: 1rem !important;
     }
     .search-width {
         width: 100%;
@@ -60,6 +61,7 @@ color: #969BA0!important;
     .route-font {
         font-size: 1.3rem !important;
     }
+    
  }
  @media (min-width: 769px) and (max-width: 991px) {
     .search-width {
@@ -70,6 +72,10 @@ color: #969BA0!important;
     }
     .route-font {
         font-size: 1.75rem !important;
+    }
+    .align-nav {
+        flex-direction: row !important;
+        margin-inline: 2rem !important;
     }
  }
  @media(min-width: 992px){

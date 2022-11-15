@@ -38,41 +38,40 @@ export const SubAccount = () => {
     return(
         <React.Fragment>
             <Container as={"section"} fluid>
-               <Row className="flex-row justify-content-center mt-5">
-                    <Col xs={11}>
-                        <Row>
-                            <Col className="d-flex flex-row justify-content-between pt-3">
-                                <div>
-                                    <TbVectorTriangle className="icon-fs color-blue pb-3"/>
-                                    <h1 className="fw-acc d-inline pt-3">Sub Account</h1>
-                                    <span>
-                                        <h5 className="font-generic fs-4">Listings of created sub accounts</h5>
-                                    </span>
-                                </div>
-                                <div className="position-relative">
-                                    <Button 
-                                        className="rounded-circle my-border text-center text-white d-flex justify-content-center align-items-center" 
-                                        onClick={() => setShow(true)}>
-                                        <BiPlus />
-                                    </Button>
-                                    <CustomModal
-                                        setShowModal={setShow} 
-                                        show={show}    
-                                        title={
-                                            <div className="text-white ps-6 py-3">
-                                                <h2>Add Sub Account</h2>
-                                                <p>Add sub account to existing accounts</p>
-                                            </div>
-                                        }  
-                                        body={
-                                            <div className="">
-                                                <Row className="pb-6 flex-row justify-content-center">
-                                                    <Col lg={10}>
-                                                        <h4 className="py-4 color-blue fw-bold">SUB ACCOUNT INFORMATION</h4>
-                                                        <Form>
-                                                            <Row className="mb-3 gx-5">
+               <Row className="flex-row justify-content-center mt-lg-5 mt-3">
+                    <Col lg={11} md={11} sm={10}>
+                        <Row className="flex-row justify-content-between pt-3 gy-3">
+                            <Col lg={6} md={6} sm={12}>
+                                <TbVectorTriangle className="icon-fs color-blue pb-3"/>
+                                <h1 className="fw-acc d-inline pt-3">Sub Account</h1>
+                                <span>
+                                    <h5 className="font-generic fs-4">Listings of created sub accounts</h5>
+                                </span>
+                            </Col>
+                            <Col lg={6} md={6} sm={12} className="position-relative d-flex flex-row justify-content-end">
+                                <Button 
+                                    className="rounded-circle my-border text-center text-white d-flex justify-content-center align-items-center" 
+                                    onClick={() => setShow(true)}>
+                                    <BiPlus />
+                                </Button>
+                                <CustomModal
+                                    setShowModal={setShow} 
+                                    show={show}    
+                                    title={
+                                        <div className="text-white trans-head ps-6 py-3">
+                                            <h2>Add Sub Account</h2>
+                                            <p>Add sub account to existing accounts</p>
+                                        </div>
+                                    }  
+                                    body={
+                                        <div className="">
+                                            <Row className="pb-6 flex-row justify-content-center">
+                                                <Col lg={10} md={10} sm={10}>
+                                                    <h4 className="py-4 color-blue trans-font fw-bold">SUB ACCOUNT INFORMATION</h4>
+                                                    <Form>
+                                                        <Row className="gy-3 gx-5">
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
-                                                                    as={Col}
                                                                     label={"SubAccount Name"}
                                                                     placeholder={"Enter SubAccount Name"}
                                                                     type={"text"}
@@ -85,6 +84,8 @@ export const SubAccount = () => {
                                                                     })
                                                                 }}
                                                                 />
+                                                            </Col> 
+                                                            <Col lg={6} md={12} sm={12}>
                                                                 <CustomForm
                                                                     as={Col}
                                                                     label={"SubAccount Number"}
@@ -99,54 +100,52 @@ export const SubAccount = () => {
                                                                     })
                                                                 }}
                                                                 />
-                                                            </Row>
-                                                            <Row className="mb-3 gy-3 gx-5">
-                                                                <Col xs={6}>
-                                                                    <CustomForm 
-                                                                        label={"Deposit"}
-                                                                        placeholder={"Enter amount to deposit"}
-                                                                        type={"text"}
-                                                                        value= {account.deposit}
-                                                                        id={"formGridDescription"}
-                                                                        classStyle={"textarea"}
-                                                                        onchange = {(deposit) => { setAccount({
-                                                                            ...account, 
-                                                                            deposit
-                                                                        })
-                                                                    }}
-                                                                    />
-                                                                </Col>
-                                                            </Row>
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm 
+                                                                    label={"Deposit"}
+                                                                    placeholder={"Enter amount to deposit"}
+                                                                    type={"text"}
+                                                                    value= {account.deposit}
+                                                                    id={"formGridDescription"}
+                                                                    classStyle={"textarea"}
+                                                                    onchange = {(deposit) => { setAccount({
+                                                                        ...account, 
+                                                                        deposit
+                                                                    })
+                                                                }}
+                                                                />
+                                                            </Col>    
+                                                        </Row>
                                                     </Form>
-                                                <Row className="gx-5 pt-4">
-                                                    <Col xs={6}>
-                                                        <Button 
-                                                            variant="outline-primary" 
-                                                            className="w-100 inputclass"
-                                                        >
-                                                            BACK
-                                                        </Button>
-                                                    </Col>
-                                                    <Col xs={6}>
-                                                        <Button 
-                                                            className="w-100 inputclass"
-                                                            onClick={handleSubmit} 
-                                                        >
-                                                            Submit
-                                                        </Button>
-                                                    </Col>
-                                                </Row>
-                                                    </Col>
-                                                </Row>
-                                            </div>
-                                        }                          
-                                    />
-                                    <div className="border add-btn text-center w-width rounded my-height pt-4 fs-4">Sub Account</div>
-                                </div>
+                                                    <Row className="gx-5 gy-5 mt-3">
+                                                        <Col xs={6}>
+                                                            <Button 
+                                                                variant="outline-primary" 
+                                                                className="w-100 inputclass"
+                                                            >
+                                                             BACK
+                                                            </Button>
+                                                        </Col>
+                                                        <Col xs={6}>
+                                                            <Button 
+                                                                className="w-100 inputclass"
+                                                                onClick={handleSubmit} 
+                                                            >
+                                                                Submit
+                                                            </Button>
+                                                        </Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    }                          
+                                />
+                                <div className="border add-btn text-center w-width rounded my-height pt-4 fs-4">Sub Account</div>
                             </Col>
                         </Row>
                         <Row className="mt-5 mb-5">
-                            <Col xs={6}>
+                            <Col lg={6} md={12} sm={12}>
                                 <InputGroup size="lg" className="position-relative">
                                     <Form.Control
                                     placeholder="Search Payment Link"
@@ -160,8 +159,8 @@ export const SubAccount = () => {
                                 </InputGroup>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col xs={4}>
+                        <Row className="gy-5 gx-5">
+                            <Col lg={6} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-between">
                                         <Col>
@@ -197,7 +196,7 @@ export const SubAccount = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={6} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-between">
                                         <Col>
@@ -233,7 +232,7 @@ export const SubAccount = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={6} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-between">
                                         <Col>
@@ -269,7 +268,7 @@ export const SubAccount = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={6} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-between">
                                         <Col>
@@ -305,7 +304,7 @@ export const SubAccount = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={6} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-between">
                                         <Col>
@@ -341,7 +340,7 @@ export const SubAccount = () => {
                                     </Row>
                                 </CustomCard>
                             </Col>
-                            <Col xs={4}>
+                            <Col lg={6} md={6} sm={12}>
                                 <CustomCard>
                                     <Row className="flex-row justify-content-between">
                                         <Col>
