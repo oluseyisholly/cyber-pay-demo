@@ -1,15 +1,10 @@
 import React from "react"
-import { Button, Col, Container, Form, InputGroup, Modal, Row, Stack } from "react-bootstrap"
+import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
 import { BiPlus, BiSearch } from "react-icons/bi"
 import { RiFileCopy2Fill } from "react-icons/ri"
-import { MdOutlineAddToPhotos } from "react-icons/md"
 import { useDispatch, useSelector } from "react-redux"
 import "../asset/styles/myStyle.css"
-import { CustomCard } from "../components/customCard"
-import CustomForm from "../components/customForm"
 import CustomModal from "../components/customModal"
-import { setPayersDetail } from "../features/userSlice"
-import Stage1 from "../components/onboardig-stages/payersDetails"
 import PayersDetails from "../components/onboardig-stages/payersDetails"
 import BankDetails from "../components/onboardig-stages/bankDetails"
 import MandateDetails from "../components/onboardig-stages/mandateDetails"
@@ -27,9 +22,9 @@ export const Mandate = () => {
 
     const dispatch = useDispatch();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    // }
 
     React.useEffect(() => {
         dispatch(setRoute({
@@ -38,6 +33,7 @@ export const Mandate = () => {
             getStartedStyle: "d-inline text-dark",
             otherStyle: "d-none "
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(
@@ -72,7 +68,7 @@ export const Mandate = () => {
                                                         <p>Add new mandates and Payer's Details</p>
                                                     </div>
                                                 )}
-                                                {stages === 2 || 3 && (
+                                                {(stages === 2 || 3) && (
                                                     <div>
                                                         <h2>Add Mandates</h2>
                                                         <p>Add new mandate and instruction</p>

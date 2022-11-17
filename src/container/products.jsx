@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Col, Container, Form, InputGroup, Modal, Row, Stack } from "react-bootstrap"
+import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
 import { BiPlus, BiSearch, BiTransfer } from "react-icons/bi"
 import { MdProductionQuantityLimits } from "react-icons/md"
 import { useDispatch, useSelector } from "react-redux"
@@ -34,6 +34,7 @@ export const Products = () => {
             getStartedStyle: "d-inline text-dark",
             otherStyle: "d-none "
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(

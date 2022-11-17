@@ -2,13 +2,11 @@ import React from "react"
 import { Button, Col, Container, InputGroup, Row } from "react-bootstrap"
 import CustomTable from "../components/customTable"
 import { BiPlus, BiSearch } from "react-icons/bi";
-import { BsFillFileTextFill, BsSearch } from "react-icons/bs"
 import { MdPayments } from "react-icons/md"
 import "../asset/styles/table.css"
 import { useDispatch } from "react-redux";
 import { setRoute } from "../features/layoutSlice";
 import { Form } from "react-bootstrap";
-import CustomForm from "../components/customForm";
 
 const jsonData = require("../jsonData.json")
 console.log(jsonData.TransactionData)
@@ -24,6 +22,7 @@ const PaymentLink = () =>{
             getStartedStyle: "d-inline text-dark",
             otherStyle: "d-none "
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return(
         <React.Fragment>

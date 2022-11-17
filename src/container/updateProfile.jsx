@@ -6,7 +6,6 @@ import CustomForm from "../components/customForm"
 import { setRoute } from "../features/layoutSlice"
 import { setUpdateProfile } from "../features/onBoardingSlice"
 import { getStartedRoutes } from "../routes"
-import { Country, State, City} from "country-state-city";
 
 export const UpdateProfile = () => {
 
@@ -29,7 +28,7 @@ export const UpdateProfile = () => {
 
     const navigate = useNavigate();
 
-    const userProfile = useSelector((state) => state.onBoarding.UpdateProfile);
+    useSelector((state) => state.onBoarding.UpdateProfile);
 
     const dispatch = useDispatch();
 
@@ -51,6 +50,7 @@ export const UpdateProfile = () => {
         getStartedStyle: "d-inline ",
         otherStyle: "d-inline text-dark"
        }))
+       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(

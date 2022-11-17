@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Col, Form, Row } from "react-bootstrap"
 import { useDispatch, useSelector } from "react-redux";
-import { setStages, setTitle } from "../../features/mandateSlice";
+import { setStages } from "../../features/mandateSlice";
 import CustomForm from "../customForm"
 
 const PayersDetails = () => {
@@ -33,8 +33,6 @@ const PayersDetails = () => {
             mandateFile: "",
         },
     })
-
-    const [show, setShow] = React.useState(false);
 
     useSelector((state) => state.user.payersDetail);
     useSelector((state) => state.user.bankDetails);
@@ -158,7 +156,6 @@ const PayersDetails = () => {
                             <Button 
                                 variant="outline-primary" 
                                 className="w-100 inputclass"
-                                onClick={() => setShow(false)}
                             >
                                 Cancel
                             </Button>

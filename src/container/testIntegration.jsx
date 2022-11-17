@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Button, Col, Container, Form, Row } from "react-bootstrap"
 import { RiErrorWarningFill } from "react-icons/ri"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import CustomForm from "../components/customForm"
 import { setRoute } from "../features/layoutSlice"
@@ -15,7 +15,7 @@ export const TestIntegration = () => {
         businessCode: "",
         integrationKey: "",
     })
-    const test = useSelector((state) => state.onBoarding.testIntegration)
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -34,6 +34,7 @@ export const TestIntegration = () => {
         getStartedStyle: "d-inline ",
         otherStyle: "d-inline text-dark"
        }))
+       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     console.log(integrate);

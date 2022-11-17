@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Col, Form, Row } from "react-bootstrap"
-import { useDispatch, useSelector } from "react-redux";
-import { setStages, setSubmit } from "../../features/mandateSlice";
+import { useDispatch } from "react-redux";
+import { setStages } from "../../features/mandateSlice";
 import CustomForm from "../customForm"
 
 const MandateDetails = (close) => {
@@ -14,9 +14,6 @@ const MandateDetails = (close) => {
         FirstPayoutDate: "",
         mandateFile: "",
     })
-
-    const showEnd = useSelector((state) => state.stages.states)
-
 
     const dispatch = useDispatch();
 

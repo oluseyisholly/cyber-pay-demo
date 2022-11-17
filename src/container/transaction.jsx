@@ -2,7 +2,7 @@ import React from "react"
 import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
 import CustomTable from "../components/customTable"
 import { BiPlus, BiSearch } from "react-icons/bi";
-import { BsFillFileTextFill, BsSearch } from "react-icons/bs"
+import { BsFillFileTextFill } from "react-icons/bs"
 import "../asset/styles/table.css"
 import { useDispatch } from "react-redux";
 import { setRoute } from "../features/layoutSlice";
@@ -36,6 +36,7 @@ const Transaction = () =>{
             getStartedStyle: "d-inline text-dark",
             otherStyle: "d-none "
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return(
         <React.Fragment>

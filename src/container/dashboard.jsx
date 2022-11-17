@@ -25,6 +25,7 @@ const Dashboard = () => {
             getStartedStyle: "",
             otherStyle: ""
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     console.log("dashboard");
     const data = [

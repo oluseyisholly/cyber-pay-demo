@@ -19,7 +19,7 @@ const CustomForm = ({
   return (
     <React.Fragment>
       {input.indexOf(type) !== -1 && (
-        <Form.Group as={as} controlId={id} className={classGroup}>
+        <Form.Group as={as} controlId={id} required className={classGroup}>
           <Form.Label className="create-text fs-4">{label}</Form.Label>
           <Form.Control
             type={type}
@@ -28,6 +28,7 @@ const CustomForm = ({
             size={size}
             className={classStyle}
             onChange={(e) => onchange(e.target.value)}
+            required
           />
         </Form.Group>
       )}

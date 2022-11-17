@@ -1,5 +1,6 @@
 import { Table } from "react-bootstrap";
 import Naira from "react-naira"
+import { routes } from "../routes";
 
 const CustomTable = ({
     bodyData,
@@ -26,6 +27,7 @@ const CustomTable = ({
                 {
                     bodyData?.map((element, index) => {
                         const array = Object.values(element);
+                        const arrayKeys = Object.keys(element);
                         return(
                             <tr key={index}> 
                                 {
@@ -60,17 +62,17 @@ const CustomTable = ({
                                                 <td key={index1} className="text-danger">{element1}</td>
                                             )
                                         }
-                                        if(index1 === 0 && Object.keys(bodyData[0])[0] === "S/N"){
+                                        if(arrayKeys[index1] === "S/N"){
                                             return(
                                                 <td key={index1}>{index + 1}</td>
                                             )
-                                        }
-                                        if(index1 === 2 && Object.keys(bodyData[0])[2] === "Amount"){
+                                        } 
+                                        if(arrayKeys[index1] === "Amount"  && window.location.pathname === routes.transaction){
                                             return(
-                                                <td className={`${parseFloat(element1) > 0 ? "text-success" : "text-danger"}`} key={index1}><Naira>{element1}</Naira></td>
+                                                <td className={`${parseFloat(element1) > 0 ? "text-success  " : "text-danger"}`} key={index1}><Naira>{element1}</Naira></td>
                                             )
                                         }
-                                        if(index1 === 3 && Object.keys(bodyData[0])[3] === "Reference"){
+                                        if(arrayKeys[index1] === "Reference"){
                                             return(
                                                 <td className={"text-primary"} key={index1}><u>{element1}</u></td>
                                             )

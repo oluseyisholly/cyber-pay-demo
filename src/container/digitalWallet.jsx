@@ -34,6 +34,7 @@ export const DigitalWallet = () => {
             getStartedStyle: "d-inline text-dark",
             otherStyle: "d-none "
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(
@@ -117,25 +118,25 @@ export const DigitalWallet = () => {
                                                                 />
                                                             </Col>
                                                         </Row>
+                                                        <Row className="gx-5 gy-5 ">
+                                                            <Col lg={6} md={6} sm={6}>
+                                                                <Button 
+                                                                    variant="outline-primary" 
+                                                                    className="w-100 inputclass"
+                                                                >
+                                                                    BACK
+                                                                </Button>
+                                                            </Col>
+                                                            <Col lg={6} md={6} sm={6}>
+                                                                <Button 
+                                                                    className="w-100 inputclass"
+                                                                    onClick={handleSubmit} 
+                                                                >
+                                                                    Submit
+                                                                </Button>
+                                                            </Col>
+                                                        </Row>
                                                     </Form>
-                                                    <Row className="gx-5 my-5 ">
-                                                        <Col xs={6}>
-                                                            <Button 
-                                                                variant="outline-primary" 
-                                                                className="w-100 inputclass"
-                                                            >
-                                                                BACK
-                                                            </Button>
-                                                        </Col>
-                                                        <Col xs={6}>
-                                                            <Button 
-                                                                className="w-100 inputclass"
-                                                                onClick={handleSubmit} 
-                                                            >
-                                                                Submit
-                                                            </Button>
-                                                        </Col>
-                                                    </Row>
                                                 </Col>
                                             </Row>
                                         </div>

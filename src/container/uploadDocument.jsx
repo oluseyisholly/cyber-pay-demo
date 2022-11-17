@@ -14,15 +14,9 @@ import { setRoute } from "../features/layoutSlice";
 const UploadDocument = () => {
     const {
         files,
-        fileNames,
-        fileTypes,
-        totalSize,
-        totalSizeInBytes,
         handleDragDropEvent,
-        clearAllFiles,
         createFormData,
         setFiles,
-        removeFile,
     } = useFileUpload();
 
     const navigate = useNavigate();
@@ -44,6 +38,7 @@ const UploadDocument = () => {
         getStartedStyle: "d-inline ",
         otherStyle: "d-inline text-dark"
        }))
+       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(

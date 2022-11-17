@@ -7,7 +7,7 @@ import { MdPayments,MdProductionQuantityLimits,MdDashboard,MdOutlineLiveHelp } f
 import { RiWallet3Fill,RiFileCopy2Fill, RiSettings4Fill } from 'react-icons/ri';
 import { VscTypeHierarchySub } from 'react-icons/vsc';
 import { BsFillFileTextFill, BsPersonFill, BsFillBellFill } from 'react-icons/bs';
-import { Button, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Button, Col, Nav, Navbar, Offcanvas, Row } from 'react-bootstrap';
 import { IMAGES } from '../asset/images/image';
 
 const SideNav = () => {
@@ -21,71 +21,75 @@ const SideNav = () => {
             <Navbar.Toggle aria-controls='sidebar-nav'/>
             <Navbar.Offcanvas id='sidebar-nav'>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title id='sidebar-nav'>
-                        <Nav className="justify-content-end d-flex w-50">
-                            <div className="nav-width flex-row align-items-center justify-content-end">
-                                <BsFillBellFill className="color-blue me-4 fs-2 my-auto"/>
-                                <IoMdSettings className="color-blue settgsIcon" />
-                                <img width={"50px"} height="50" className={" ms-4 rounded-circle my-circle"} src={IMAGES.avatar} alt={'avatar'}/>
-                                <p className={"fs-6 fw-bold my-auto text-nowrap ps-3 d-inline"}>Hello, Olusola</p>
-                            </div>
+                    <Offcanvas.Title id='sidebar-nav' >
+                        <Nav className=" w-100">
+                            <Row className="nav-width flex-row justify-content-between">
+                                <Col>
+                                    <img width={"50px"} height="50" className={" ms-4 rounded-circle my-circle"} src={IMAGES.avatar} alt={'avatar'}/>
+                                    <p className={"fs-6 fw-bold my-auto text-nowrap ps-3 d-inline"}>Hello, Olusola</p>
+                                </Col>
+                                <Col className='d-flex flex-row justify-content-end'>
+                                    <BsFillBellFill className="color-blue me-4 fs-2 my-auto"/>
+                                    <IoMdSettings className="color-blue settgsIcon my-auto" />
+                                </Col>
+                            </Row>
                         </Nav>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body className='flex-column'>
-                    <Button onClick={()=> {navigate(routes.dashboard)}} className={"my-1 ps-2 side-link-wrp"}>
-                        <MdDashboard className='icon-color fs-3 mb-2 me-3'/>
-                        <span className="side-link ">Dashboard</span>
+                    <Button onClick={() => {navigate(routes.dashboard)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <MdDashboard className='icons-color fs-3 '/>
+                        <span className='text-start me-3'>Dashboard</span> 
                     </Button>
 
-                    <Button onClick={()=> { navigate(routes.transaction)}}  className={"my-1 ps-2 side-link-wrp"}>
-                        <BsFillFileTextFill className='icon-color fs-3 mb-2 me-3'/>
-                        <span className="side-link ">Transaction</span>
+                    <Button onClick={()=> { navigate(routes.transaction)}}  className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <BsFillFileTextFill className='icons-color fs-3'/>
+                        <span className="side-link me-3">Transaction</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.subAccount)}} className={"my-1 ps-2 side-link-wrp ms-3"}>
-                        <VscTypeHierarchySub className='icon-color fs-3 mb-2 me-3'/>
-                        <span className="side-link ">Sub Account</span>
+                    <Button onClick={() => {navigate(routes.subAccount)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <VscTypeHierarchySub className='icons-color fs-3'/>
+                        <span className="side-link ms-4">Sub Account</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.digitalwallet)}} className={"my-1 ps-2 side-link-wrp ms-4"}>
-                        <RiWallet3Fill className='icon-color fs-3 mb-2  me-3'/>
-                        <span className="side-link ">Digital Wallet</span>
+                    <Button onClick={() => {navigate(routes.digitalwallet)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <RiWallet3Fill className='icons-color fs-3'/>
+                        <span className="side-link ms-3">Digital Wallet</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.products)}} className={"my-1 ps-2 side-link-wrp me-4"}>
-                        <MdProductionQuantityLimits className='icon-color fs-3 mb-2  me-3'/>
-                        <span className="side-link ">Products</span>
+                    <Button onClick={() => {navigate(routes.products)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <MdProductionQuantityLimits className='icons-color fs-3'/>
+                        <span className="side-link me-5">Products</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.paymentLink)}} className={"my-1 ps-2 side-link-wrp ms-4"}>
-                        <MdPayments className='icon-color fs-3 mb-2  me-3'/>          
+                    <Button onClick={() => {navigate(routes.paymentLink)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <MdPayments className='icons-color fs-3'/>          
                         <span className="side-link ">Payment Link</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.payouts)}} className={"my-1 ps-2 side-link-wrp me-4  "}>
-                        <HiCalendar className='icon-color fs-3 mb-2  me-3'/>
-                        <span className="side-link">Payouts</span>
+                    <Button onClick={() => {navigate(routes.payouts)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <HiCalendar className='icons-color fs-3'/>
+                        <span className="side-link me-5">Payouts</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.mandates)}}  className={"my-1 ps-2 side-link-wrp"}>
-                        <RiFileCopy2Fill className='icon-color fs-3 mb-2  me-3'/>
-                        <span className="side-link ">Mandates</span>
+                    <Button onClick={() => {navigate(routes.mandates)}}  className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <RiFileCopy2Fill className='icons-color fs-3'/>
+                        <span className="side-link me-4">Mandates</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.profile)}} className={"my-1 ps-2 side-link-wrp me-4"}>
-                        <BsPersonFill className='icon-color fs-3 mb-2  me-3'/>
-                        <span  className="side-link ">Profiles</span>
+                    <Button onClick={() => {navigate(routes.profile)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <BsPersonFill className='icons-color fs-3 me-3'/>
+                        <span  className="side-link me-5">Profiles</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.switchBiz)}} className={"my-1 ps-2 side-link-wrp"}>
-                        <IoIosSwitch className='icon-color fs-3 mb-2  me-3'/>
-                        <span  className="side-link ">Switch Biz</span>
+                    <Button onClick={() => {navigate(routes.switchBiz)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <IoIosSwitch className='icons-color fs-3 '/>
+                        <span  className="side-link me-4">Switch Biz</span>
                     </Button>
 
-                    <Button onClick={() => {navigate(routes.settings)}} className={"my-1 ps-2 side-link-wrp me-3"}>
-                        <RiSettings4Fill className='icon-color fs-3 mb-2  me-3' />
-                        <span  className="side-link ">Settings</span>
+                    <Button onClick={() => {navigate(routes.settings)}} className={"d-flex flex-row justify-content-between side-link-wrp"}>
+                        <RiSettings4Fill className='icons-color fs-3' />
+                        <span  className="side-link me-5">Settings</span>
                     </Button>
 
                     <div className='mt-5 w-100'>

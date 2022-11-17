@@ -46,6 +46,7 @@ const Payout = () => {
                         </Row>
                         <Row className="mt-5">
                             <CustomTable bodyData={jsonData.payoutData}/>
+                            
                         </Row>
                     </Col>
                </Row>

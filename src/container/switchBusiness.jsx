@@ -3,7 +3,6 @@ import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
 import { RiFileCopy2Fill } from 'react-icons/ri';
 import { BiPlus, BiSearch  } from 'react-icons/bi';
 import { AiFillEye } from 'react-icons/ai'
-import {  BsSearch } from 'react-icons/bs';
 import CustomForm from "../components/customForm";
 import { CustomCard } from "../components/customCard";
 import "../asset/styles/paymentLink.css"
@@ -42,6 +41,7 @@ const Switch =() => {
             getStartedStyle: "d-inline text-dark",
             otherStyle: "d-none "
            }))
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     console.log(business);
     return(
@@ -67,128 +67,127 @@ const Switch =() => {
                                     setShowModal={setShow} 
                                     show={show}    
                                     title={
-                                        <div className="cus-div">
+                                        <div className="text-white trans-head ps-6 py-3">
                                             <h3>Add Business</h3>
-                                            <p className="p-fs">Add new business to an existing business</p>
+                                            <p>Add new business to an existing business</p>
                                         </div>
                                     }   
                                     body={
                                         <div className="">
-                                            <Row>
-                                                <Col className="cus-div">
-                                                    <h5 className="payment-div mb-3">BUSINESS INFORMATION</h5>
-                                                </Col>
-                                            </Row>
-                                            <Row className="my-margin-8">
-                                                <Col lg={5} className=" mt-3 ">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Business Name"} 
-                                                        label={"Business Name"}
-                                                        className={"myinputs"} 
-                                                        value={business.businessName}
-                                                        onchange={(businessName) => {setBusiness({
-                                                            ...business, businessName
-                                                        })}}
-                                                    />
-                                                </Col>
-                                                <Col lg={5} className="mt-3  ">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Phone Number"} 
-                                                        label={"Phone Number"}
-                                                        className={"myinputs"}
-                                                        value={business.phoneNumber}
-                                                        onchange={(phoneNumber) => {setBusiness({
-                                                            ...business, phoneNumber
-                                                        })}} 
-                                                    />
-                                                </Col>
-                                            </Row>
-                                            <Row className="my-margin-8">
-                                                <Col lg={5} className=" mt-3 ">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Website"} 
-                                                        label={"Website"}
-                                                        className={"myinputs"} 
-                                                        value={business.website}
-                                                        onchange={(website) => {setBusiness({
-                                                            ...business, website
-                                                        })}}
-                                                    />
-                                                </Col>
-                                                <Col lg={5} className=" mt-3 ">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Email Address"} 
-                                                        label={"Business Email Address"}
-                                                        className={"myinputs"} 
-                                                        value={business.businessEmail}
-                                                        onchange={(businessEmail) => {setBusiness({
-                                                            ...business, businessEmail
-                                                        })}}
-                                                    />
-                                                </Col>
-                                            </Row>
-                                            <Row className="my-margin-8">
-                                                <Col lg={5} className="mt-3  ">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Contact Email"} 
-                                                        label={"Contact Mail Address"}
-                                                        className={"myinputs"} 
-                                                        value={business.contactEmail}
-                                                        onchange={(contactEmail) => {setBusiness({
-                                                            ...business, contactEmail
-                                                        })}}
-                                                    />
-                                                </Col>
-                                                <Col lg={5} className="mt-3  ">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Support Email"} 
-                                                        label={"Support Email Address"}
-                                                        className={"myinputs"} 
-                                                        value={business.supportEmail}
-                                                        onchange={(businessName) => {setBusiness({
-                                                            ...business, businessName
-                                                        })}}
-                                                    />
-                                                </Col>
-                                            </Row>
-                                            <Row className="my-margin-8">
-                                                <Col lg={5} className=" mt-3">
-                                                    <CustomForm
-                                                        as={Col}
-                                                        type={"text"} 
-                                                        placeholder={"Enter Payer's Address"} 
-                                                        label={"Payer's Address"}
-                                                        classStyle={"my-h-30"} 
-                                                        value={business.payersAddress}
-                                                        onchange={(payersAddress) => {setBusiness({
-                                                            ...business, payersAddress
-                                                        })}}
-                                                    />
-                                                </Col>
-                                                <Col lg={5}></Col>
-                                            </Row>
-                                            <Row className="my-margin-8 mt-3 gy-4">
-                                                <Col lg={5} className="  ">
-                                                    <Button className= "w-100 btn-height" onClick={handleSubmit}>
-                                                        Submit
-                                                    </Button>
-                                                </Col>
-                                                <Col lg={5} className="  ">
-                                                    <Button className= "w-100 my-cancel btn-height">
-                                                        Cancel
-                                                    </Button>
+                                            <Row className="flex-row justify-content-center mb-3">
+                                                <Col lg={11} md={10} sm={10}>
+                                                `   <h4 className="py-4 color-blue trans-font fw-bold">BUSINESS INFORMATION</h4>
+                                                    <Form>
+                                                        <Row className="gy-3 gx-5">
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Business Name"} 
+                                                                    label={"Business Name"}
+                                                                    className={"myinputs"} 
+                                                                    value={business.businessName}
+                                                                    onchange={(businessName) => {setBusiness({
+                                                                        ...business, businessName
+                                                                    })}}
+                                                                />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Phone Number"} 
+                                                                    label={"Phone Number"}
+                                                                    className={"myinputs"}
+                                                                    value={business.phoneNumber}
+                                                                    onchange={(phoneNumber) => {setBusiness({
+                                                                        ...business, phoneNumber
+                                                                    })}} 
+                                                                />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    as={Col}
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Website"} 
+                                                                    label={"Website"}
+                                                                    className={"myinputs"} 
+                                                                    value={business.website}
+                                                                    onchange={(website) => {setBusiness({
+                                                                        ...business, website
+                                                                    })}}
+                                                                />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    as={Col}
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Email Address"} 
+                                                                    label={"Business Email Address"}
+                                                                    className={"myinputs"} 
+                                                                    value={business.businessEmail}
+                                                                    onchange={(businessEmail) => {setBusiness({
+                                                                        ...business, businessEmail
+                                                                    })}}
+                                                                />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    as={Col}
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Contact Email"} 
+                                                                    label={"Contact Mail Address"}
+                                                                    className={"myinputs"} 
+                                                                    value={business.contactEmail}
+                                                                    onchange={(contactEmail) => {setBusiness({
+                                                                        ...business, contactEmail
+                                                                    })}}
+                                                                />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    as={Col}
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Support Email"} 
+                                                                    label={"Support Email Address"}
+                                                                    className={"myinputs"} 
+                                                                    value={business.supportEmail}
+                                                                    onchange={(businessName) => {setBusiness({
+                                                                        ...business, businessName
+                                                                    })}}
+                                                                />
+                                                            </Col>
+                                                            <Col lg={6} md={12} sm={12}>
+                                                                <CustomForm
+                                                                    as={Col}
+                                                                    type={"text"} 
+                                                                    placeholder={"Enter Payer's Address"} 
+                                                                    label={"Payer's Address"}
+                                                                    classStyle={"my-h-30"} 
+                                                                    value={business.payersAddress}
+                                                                    onchange={(payersAddress) => {setBusiness({
+                                                                        ...business, payersAddress
+                                                                    })}}
+                                                                />
+                                                            </Col>
+                                                        </Row>
+                                                        <Row className="gx-5 gy-4 mt-3">
+                                                            <Col lg={6} md={6} sm={6}>
+                                                                <Button 
+                                                                    className= "w-100 inputclass" 
+                                                                    onClick={handleSubmit}
+                                                                >
+                                                                    Submit
+                                                                </Button>
+                                                            </Col>
+                                                            <Col lg={6} md={6} sm={6}>
+                                                                <Button 
+                                                                    className= "w-100 inputclass"
+                                                                    variant="outline-primary"
+                                                                >
+                                                                    Cancel
+                                                                </Button>
+                                                            </Col>
+                                                        </Row>
+                                                    </Form>
                                                 </Col>
                                             </Row>
                                         </div>
@@ -415,7 +414,7 @@ const Switch =() => {
                                             </Button>
                                         </Col>
                                         <Col className="busi"> 
-                                            <Button className="fs-5 fw-bold topNav border-0 py-2 px-3">
+                                            <Button acti className="fs-5 fw-bold topNav border-0 py-2 px-3">
                                                 <AiFillEye className=""/>
                                                 View Details
                                             </Button>

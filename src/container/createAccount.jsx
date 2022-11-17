@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import {Button, Col, Container, Form, Row, Stack} from "react-bootstrap"
+import { Button, Col, Container, Form, Row } from "react-bootstrap"
 import "../asset/styles/myStyle.css"
 import CustomForm from "../components/customForm"
 import { useDispatch, useSelector } from "react-redux"
@@ -29,6 +29,7 @@ export const CreateAccount = () => {
         getStartedStyle: "d-inline ",
         otherStyle: "d-inline text-dark"
        }))
+       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
    
@@ -97,17 +98,18 @@ export const CreateAccount = () => {
                                     />
                                 </Col>
                             </Row>
+                            <Row className="mt-5">
+                                <Col lg={6} md={6} sm={12}>
+                                    <Button 
+                                        onClick={handleSubmit} 
+                                        className="inputclass btn-width"
+                                        type="button"
+                                    >
+                                        CREATE ACCOUNT
+                                    </Button>
+                                </Col>
+                            </Row>
                         </Form>
-                        <Row className="mt-5">
-                            <Col lg={6} md={6} sm={12}>
-                                <Button 
-                                    onClick={handleSubmit} 
-                                    className="inputclass btn-width"
-                                >
-                                    CREATE ACCOUNT
-                                </Button>
-                            </Col>
-                        </Row>
                     </Col>
                 </Row>
             </Container>

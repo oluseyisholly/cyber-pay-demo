@@ -13,38 +13,42 @@ import { DigitalWallet } from './container/digitalWallet';
 import { Mandate } from './container/mandate';
 import BusinessProfile from './container/businessProfile';
 import Settings from './container/settings';
-import CustomNav from './components/navbar';
 import Layout from './components/layout/layouts';
 import Dashboard from './container/dashboard';
 import Transaction from './container/transaction';
 import PaymentLink from './container/paymentLink';
 import Payout from './container/payout';
+import {QueryClient, QueryClientProvider} from 'react-query';
 
+
+const queryClient = new QueryClient();
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter>
-        <Layout>
-        <Routes>
-            <Route path="/" element={<Navigate to={getStartedRoutes.createAccount}/>} />
-            <Route path={getStartedRoutes.createAccount} element={<CreateAccount />}/>
-            <Route path ={getStartedRoutes.updateProfile } element={<UpdateProfile />}/>
-            <Route path ={getStartedRoutes.testIntegration} element={<TestIntegration/>}/>
-            <Route path ={routes.subAccount} element={<SubAccount/>}/>
-            <Route path ={getStartedRoutes.updateDocument} element={<UploadDocument />}/>
-            <Route path ={routes.products} element={<Products />}/>
-            <Route path ={routes.switchBiz} element={<Switch />}/>
-            <Route path ={routes.digitalwallet} element={<DigitalWallet />}/>
-            <Route path ={routes.mandates} element={<Mandate />}/>
-            <Route path={routes.profile} element={<BusinessProfile />}/>
-            <Route path ={routes.settings} element={<Settings />}/>
-            <Route path={routes.dashboard} element={<Dashboard />}/>
-            <Route path ={routes.transaction} element={<Transaction />}/>
-            <Route path ={routes.paymentLink} element={<PaymentLink />}/>
-            <Route path ={routes.payouts} element={<Payout />}/>
-          </Routes>
-        </Layout>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Layout>
+          <Routes>
+              <Route path="/" element={<Navigate to={getStartedRoutes.createAccount}/>} />
+              <Route path={getStartedRoutes.createAccount} element={<CreateAccount />}/>
+              <Route path ={getStartedRoutes.updateProfile } element={<UpdateProfile />}/>
+              <Route path ={getStartedRoutes.testIntegration} element={<TestIntegration/>}/>
+              <Route path ={routes.subAccount} element={<SubAccount/>}/>
+              <Route path ={getStartedRoutes.updateDocument} element={<UploadDocument />}/>
+              <Route path ={routes.products} element={<Products />}/>
+              <Route path ={routes.switchBiz} element={<Switch />}/>
+              <Route path ={routes.digitalwallet} element={<DigitalWallet />}/>
+              <Route path ={routes.mandates} element={<Mandate />}/>
+              <Route path={routes.profile} element={<BusinessProfile />}/>
+              <Route path ={routes.settings} element={<Settings />}/>
+              <Route path={routes.dashboard} element={<Dashboard />}/>
+              <Route path ={routes.transaction} element={<Transaction />}/>
+              <Route path ={routes.paymentLink} element={<PaymentLink />}/>
+              <Route path ={routes.payouts} element={<Payout />}/>
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </QueryClientProvider>
     </React.Fragment>
     
   )

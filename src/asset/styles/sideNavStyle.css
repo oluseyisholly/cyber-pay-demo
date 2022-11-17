@@ -1,14 +1,7 @@
-icon-color{
+.icons-color{
     font-size: 31px;
     margin-bottom: 3px;
-    margin-right: 16px;
-    color: #BDBDBD;
-}
-.side-link{
-    color: #333333;
-    font-weight: 600;
-    font-size: 17px;
-    inherits: inherit
+    font-weight: lighter !important;
 }
 .side-link-wrp{
     width: 100%;
@@ -18,10 +11,14 @@ icon-color{
     align-items: center;
     background-color: white!important;
     border: none!important;
+    color: #333333 !important;
+    font-weight: 600;
+    font-size: 17px !important;
+    inherits: inherit
 }
-
-.side-link-wrp:active{
-    background-color: #FBFBFB!important;
+.side-link-wrp:focus{
+    background-color: #fafafa!important;
+    color: #2f8ed6 !important;
 }
 .btn-border {
     border-radius: 0;
